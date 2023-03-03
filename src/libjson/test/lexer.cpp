@@ -24,7 +24,7 @@ TEST(LexerSuite, ValidNumbers) {
 
 TEST(LexerSuite, InvalidTokens) {
   // Given
-  std::stringstream in("abc");
+  std::stringstream in("$#@");
 
   // When
   std::stringstream out;
@@ -33,9 +33,9 @@ TEST(LexerSuite, InvalidTokens) {
   // Then
   EXPECT_EQ(
       out.str(),
-      "Loc=<1:0>\tINVALID 'a'\n"
-      "Loc=<1:1>\tINVALID 'b'\n"
-      "Loc=<1:2>\tINVALID 'c'\n");
+      "Loc=<1:0>\tINVALID '$'\n"
+      "Loc=<1:1>\tINVALID '#'\n"
+      "Loc=<1:2>\tINVALID '@'\n");
 }
 
 }  // namespace json::test
