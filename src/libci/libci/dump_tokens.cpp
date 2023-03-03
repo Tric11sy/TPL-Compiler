@@ -7,7 +7,6 @@
 namespace json {
 
 static std::string_view get_token_type_name(
-    //const JsonLexer& lexer,
     const CiLexer& lexer,
     const antlr4::Token& token) {
   return lexer.getVocabulary().getSymbolicName(token.getType());
@@ -15,8 +14,7 @@ static std::string_view get_token_type_name(
 
 void dump_tokens(std::istream& in, std::ostream& out) {
   antlr4::ANTLRInputStream stream(in);
-  //JsonLexer lexer(&stream);
-    CiLexer lexer(&stream);
+  CiLexer lexer(&stream);
 
   for (auto token = lexer.nextToken(); token->getType() != antlr4::Token::EOF;
        token = lexer.nextToken()) {
