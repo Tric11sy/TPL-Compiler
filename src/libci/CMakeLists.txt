@@ -1,4 +1,4 @@
-set(lib_name json)
+set(lib_name ci)
 
 add_library(${lib_name})
 
@@ -10,15 +10,15 @@ target_include_directories(${lib_name} PUBLIC .)
 target_sources(
   ${lib_name}
   PUBLIC
-    libjson/dump_tokens.hpp
+    libci/dump_tokens.hpp
   PRIVATE
-    libjson/dump_tokens.cpp
+    libci/dump_tokens.cpp
 )
 
 target_link_libraries(
   ${lib_name}
   PRIVATE
-    JsonLexer
+    CiLexer
     fmt
 )
 

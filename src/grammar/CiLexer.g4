@@ -1,4 +1,4 @@
-lexer grammar JsonLexer;
+lexer grammar CiLexer;
 
 fragment DIGITNOZERO  :  [1-9]                       ;
 fragment DIGIT        :  [0-9]                       ;

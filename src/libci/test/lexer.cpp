@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include <libjson/dump_tokens.hpp>
+#include <libci/dump_tokens.hpp>
 
 #include <sstream>
 #include <string>

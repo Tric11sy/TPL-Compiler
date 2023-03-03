@@ -1,4 +1,4 @@
-set(lexer_lib_name JsonLexer)
+set(lexer_lib_name CiLexer)
 
 add_library(${lexer_lib_name} STATIC)
 

@@ -1,3 +1,3 @@
 add_subdirectory(grammar)
-add_subdirectory(json-parser)
-add_subdirectory(libjson)
+add_subdirectory(ci-parser)
+add_subdirectory(libci)

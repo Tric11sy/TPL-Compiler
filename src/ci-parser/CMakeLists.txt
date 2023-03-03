@@ -1,4 +1,4 @@
-set(app_name json-parser)
+set(app_name ci-parser)
 
 add_executable(${app_name})
 
@@ -17,7 +17,7 @@ target_link_libraries(
   ${app_name}
   PRIVATE
     cxxopts
-    json
+    ci
 )
 
 set_target_properties(
